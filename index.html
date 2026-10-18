@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <title>My Moon 🌙</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    <div class="stars"></div>
+    <div class="float-words">
+      <span>my moon</span><span>my love</span><span>nbghiiik</span>
+      <span>minouchti</span><span>my moon</span><span>my love</span>
+      <span>nbghiiik</span><span>minouchti</span>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">🌙 <span>my moon</span></div>
+    <div class="top-note">a little place from my heart</div>
+  </header>
+
+  <main>
+    <section class="screen active" id="welcomeScreen">
+      <button class="welcome-button" id="startBtn" aria-label="Enter the site">
+        <span class="moon">☾</span>
+        <span class="welcome-title">a little something for you</span>
+        <span class="click-hint">click anywhere to see what i can do for you <b>↓</b></span>
+      </button>
+    </section>
+
+    <section class="screen" id="menuScreen">
+      <div class="section-heading">
+        <p class="eyebrow">JUST FOR YOU</p>
+        <h1>Where would you like to go? <span>♡</span></h1>
+        <p class="subheading">One little step at a time. Take your time.</p>
+      </div>
+      <div class="card-grid">
+        <button class="choice-card" id="introCard">
+          <span class="card-number">01</span><span class="card-emoji">✉️</span>
+          <strong>Introduction</strong><small>start here, slowly</small>
+          <span class="card-arrow">↗</span>
+        </button>
+        <button class="choice-card locked" id="moreCard" disabled>
+          <span class="card-number">02</span><span class="card-emoji">💌</span>
+          <strong>See more</strong><small>unlock after the introduction</small>
+          <span class="lock">🔒</span>
+        </button>
+        <button class="choice-card locked third-card" id="pointsCard" disabled>
+          <span class="card-number">03</span><span class="card-emoji">🌷</span>
+          <strong>Points of agreement</strong><small>one step at a time</small>
+          <span class="lock">🔒</span>
+        </button>
+      </div>
+      <p class="gentle-note">No rush. Everything has its own little place. ♡</p>
+    </section>
+
+    <section class="screen" id="introScreen">
+      <article class="letter-panel">
+        <p class="eyebrow">01 · INTRODUCTION</p>
+        <h1>Slm, nchlh tkoni bien <span>♡</span></h1>
+        <div class="letter-text">
+          <p>slm, nchlh tkoni bien</p>
+          <div class="star-divider">✦　✧　✦</div>
+          <p>chofi ana kont nawi bzaf 3fayes m3a fara7 w kima 3labalk mabghatch w lah ysahal 3liha psq vrai say bredt men jihtha</p>
+          <div class="star-divider">✦　✧　✦</div>
+          <p>miii rabi 3awadni bol5of bik nti chira macha2lah (my moon) 3jbtni 3a9litek bzaf bzaf d5altili f galbi w bdiiit nbghik mi ana chwiya samet g3adt mwsws bli feaut compte mi ki confirmit bli la say bdit nprogrami lwach rah jay</p>
+          <div class="star-divider">✦　✧　✦</div>
+          <p>w lirah jay 7ata t clicki fi return mel ta7t w todo5li f see more tfahmi</p>
+        </div>
+        <button class="primary-btn" id="introReturn">Return <span>↩</span></button>
+      </article>
+    </section>
+
+    <section class="screen" id="moreScreen">
+      <article class="letter-panel wide">
+        <p class="eyebrow">02 · SEE MORE</p>
+        <h1>Chofi 7obi... <span>♡</span></h1>
+        <div class="letter-text">
+          <p>chofi 7obi ana ni 5ayef 3afsa wahda jawbini fiha fel insta li hiya ank tkono len dak genre li ykrah t3jbah l bidayat w kda w m3a lwa9t mor 3am 3amin ydaya9 w ybghi ybdl y7abes kda ana vrai manich men had style ana kol manfwto wa9t m3a ba3dana nzid nwalfek w nbghiiik ktar konk mhanya w tani dija ni nbghiiik bzaaf asln mechi i3jab mii kayen ni9at yli9 nahadro fiha 9abl manodo5lo f relation li hiya ...</p>
+        </div>
+        <div class="action-row">
+          <button class="secondary-btn" id="moreReturn">Return ↩</button>
+          <button class="primary-btn" id="doYouLoveMe">Do you love me? <span>♡</span></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="screen" id="pointsScreen">
+      <article class="letter-panel wide">
+        <p class="eyebrow">03 · POINTS OF AGREEMENT</p>
+        <h1>Ni9at motafa9 3alayha <span>♡</span></h1>
+        <div class="letter-text">
+          <p>2awalan 3andi i3tiraf lik ano ana Patient diabétique ma3naha fiya sokor</p>
+          <div class="star-divider">✦　✧　✦</div>
+          <p>l3afsa zawja ma5asnich nlomo ba3dana 3la chkon li rah yersel lwl l5oh wla yebda lhadra wla 5asni nkono f relation perfect n9aya w ga3 madamna mazalna sghar 7ata yekteb rabi</p>
+          <div class="star-divider">✦　✧　✦</div>
+          <p>w ma5asnich hadak tbahlil w machakil 3la walo aki ta3arfi</p>
+        </div>
+        <div class="action-row">
+          <button class="secondary-btn" id="pointsReturn">Return ↩</button>
+          <button class="primary-btn" id="toFinal">Are you ready for... <span>♡</span></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="screen" id="loveScreen">
+      <article class="letter-panel final-panel">
+        <p class="eyebrow">JUST A LITTLE QUESTION</p>
+        <div class="big-heart">♡</div>
+        <h1 class="know-title">I know</h1>
+        <div class="star-divider">✦　✧　✦</div>
+        <p class="final-note">♡</p>
+        <button class="primary-btn" id="loveReturn">Return <span>↩</span></button>
+      </article>
+    </section>
+
+    <section class="screen" id="finalScreen">
+      <article class="letter-panel final-panel">
+        <p class="eyebrow">ONE LAST QUESTION</p>
+        <div class="big-heart">♡</div>
+        <h1>Do you accept me and can we enter into a romantic relationship?</h1>
+        <div class="star-divider">✦　✧　✦</div>
+        <p class="final-note">jawbini f insta bon ♡</p>
+        <button class="primary-btn" id="finalReturn">Return <span>↩</span></button>
+      </article>
+    </section>
+  </main>
+
+  <footer>made with care <span>♡</span></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
